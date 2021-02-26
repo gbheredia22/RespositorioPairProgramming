@@ -1,19 +1,50 @@
-package Abstraccion;
+package modelo.mundo;
+//Grupo 2
+public class Figura {
 
-public abstract class Figura
-{
-    private String color;
+	private String nombre;
 
-    public Figura(String color)
-    {
-        this.color = color;
-    }
+	private String color;
 
-    public abstract double calcularArea();
+	public Figura(String nombre) {
 
-    public String getColor()
-    {
-        return color;
-    }
-   
+	super();
+
+	this.nombre = nombre;
+
+	}
+
+	public Figura(String nombre, String color) {
+
+	super();
+
+	this.nombre = nombre;
+
+	this.color = color;
+
+	}
+
+	public String getNombre() {
+
+	return nombre;
+
+	}
+
+	public void setNombre(String nombre) {
+
+	this.nombre = nombre;
+
+	}
+
+	public String getColor() {
+
+	return color;
+
+	}
+
+	public void setColor(String color) {
+
+	this.color = color;
+
+	}
 }
